@@ -1,0 +1,30 @@
+extends layout.pug
+
+block appContent
+    main.main
+        .hero
+            video(autoplay muted loop id="heroBackgroundVideo")
+                source(src="./vids/hero-vid-1.mp4" type="video/mp4")
+                | Your browser does not support HTML5 video.
+            .hero__overlay
+            .hero-text
+                h1 #{pageHeader}
+                a.btn.anchor(href='#products') Explore More
+        section#products.section-cards
+            header.section-cards__header
+            h1.section-cards__main-heading #{pageHeader}
+            h2.section-cards__sub-heading Discover the Latest in Swimwear Fashion
+            .cards-container
+                - let cards = [1, 2, 3, 4, 5, 6]
+                each val in cards
+                    .card
+                        article.card__article
+                            .card__image-container
+                            img.card__image(src=`./img/products/img-${val}.jpg` alt=`image-${val}`)
+                            .card__content
+                            h2.card__heading Swimsuit #{val}
+                            p.card__description
+                                ul.card__list
+                                li.card__list__item Category: #{val === 6 ? 'Orange' : val === 5 || val === 2 ? 'Animal Print' : 'Summer'}
+                                li.card__list__item Price: $50.00
+                                li.card__list__item(class=val === 6 ? 'unavailable' : '') Stock: #{val === 6 ? 'Unavailable' : 'Available'}

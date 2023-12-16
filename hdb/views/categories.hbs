@@ -1,0 +1,29 @@
+<main class="main">
+
+    <div class='hero'>
+        <video autoplay muted loop id="heroBackgroundVideo">
+            <source src="./vids/hero-vid-2.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+        <div class='hero-text'>
+            <h1>{{ pageHeader }}</h1>
+            <a class='btn anchor' href='#categories'>Explore More</a>
+        </div>
+    </div>
+
+    <section id="categories" class="section-cards">
+        <header class="section-cards__header">
+            <h1 class="section-cards__main-heading">{{ pageHeader }}</h1>
+        </header>
+        <div class="categories-container">
+            <div class="categories-grid">
+                {{#each categories}}
+                <div class="grid-item">{{this.name}}</div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+
+</main>

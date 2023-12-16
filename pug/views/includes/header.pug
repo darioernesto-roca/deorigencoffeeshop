@@ -1,0 +1,24 @@
+input.main-nav-toggle(type="checkbox" id="main-nav-toggle")
+header.main-header
+  .main-header__logo-container
+    a(href="/")
+      img.main-header__logo-container__logo-image(src="./img/logo/kytes-logo.png" alt="Logo Kytes")
+  .main-header__search-form-container
+    img(src="./img/icons/search-icon.png" alt="Search Icon" class="main-header__search-icon")
+    input.main-header__search-form-input(type="text" name="search" placeholder="Search...")
+  .main-header__hamburger-button-container
+    label.hamburger-button(for="main-nav-toggle")
+      span.hamburger-button__top-bread
+      span.hamburger-button__meat
+      span.hamburger-button__bottom-bread
+  .main-header__main-nav-container
+    nav.main-nav
+      ul.main-nav__list
+        li.main-nav__item
+          a.main-nav__link(href="/") Home
+        li.main-nav__item
+          a.main-nav__link(href="./categories") Categories
+        li.main-nav__item
+          a.main-nav__link(href="./contact") Contact
+        li.main-nav__item
+          a.main-nav__link(href="./about-us") About Us

@@ -1,0 +1,14 @@
+
+.main-nav-toggle {
+    display: none;
+
+    &:checked ~ .main-header .main-header__main-nav-container {
+        position: absolute;
+        top: 164px;
+        display: block;
+        background-color: #000;
+        z-index: 99999;
+        width: 100vw;
+    }
+}
+    

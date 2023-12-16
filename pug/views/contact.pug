@@ -1,0 +1,50 @@
+extends layout.pug
+
+block appContent
+    main.main
+        .cover-contact
+            .hero-text
+                h1 Contact Us
+
+        section.page__container
+            .form-container
+                h2.form-title Contact Us
+                p.header-paragraph
+                    | Our dedicated team is available to address any inquiries you may have. For immediate assistance, please give us a call: 
+                    a(href="https://api.whatsapp.com/send?phone=+573004277281&text=Hey there." target="_blank")
+                    strong Phone number: 
+                    | +57 3004277281
+                form.contact-form(action="/contact" method="POST")
+                    .form-group
+                    label.form-label(for="name") Full Name
+                    input.form-input#name(name="name" type="text" placeholder="Your full name" required)
+                    .form-group
+                    label.form-label(for="phone") Phone
+                    input.form-input#phone(type="phone" name="phone" placeholder="Your phone")
+                    .form-group
+                    label.form-label(for="email") Email
+                    input.form-input#email(name="email" type="email" placeholder="Your email" required)
+                    .form-group
+                    .help Please select a topic.
+                    label(for="service") Services
+                    select#service(name="service" required)
+                        option(value="" disabled selected) Select one
+                        option(value="Request a quote or purchase an item") Request a quote or purchase an item
+                        option(value="Schedule an appointment") Schedule an appointment
+                        option(value="Learn more about our products") Learn more about our products
+                        option(value="News and Promotions") News and Promotions
+                        option(value="Custom-made") Custom-made
+                        option(value="Style consultations") Style consultations
+                    .form-group
+                    label(for="message") Message
+                    textarea.form-textarea(name="message" id="message" cols="40" rows="10" placeholder="Your message here...")
+                    .help The message cannot have more than 500 words.
+                    .form-group
+                    label(for="terms")
+                        input#terms(type="checkbox" name="terms" required)
+                        span
+                        | Accept 
+                        a.link-pages(href="#") Terms & Conditions
+                    br
+                    .button-container
+                        input(type="submit" value="Sent" class="normal")

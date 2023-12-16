@@ -1,0 +1,79 @@
+{
+    "productData": [
+        {
+            "name": "Product 1",
+            "category": "Espresso",
+            "price": 50.00,
+            "image": "./img/products/img-1.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Product 2",
+            "category": "Cake",
+            "price": 50.00,
+            "image": "./img/products/img-2.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Product 3",
+            "category": "Latte",
+            "price": 50.00,
+            "image": "./img/products/img-3.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Product 4",
+            "category": "Cake",
+            "price": 50.00,
+            "image": "./img/products/img-4.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Product 5",
+            "category": "Bread",
+            "price": 50.00,
+            "image": "./img/products/img-5.jpg",
+            "stock_status": "Available"
+        },
+        {
+            "name": "Product 6",
+            "category": "Breakfast",
+            "price": 50.00,
+            "image": "./img/products/img-6.jpg",
+            "stock_status": "Unavailable"
+        }
+    ],
+    "categoryData": [
+        { "name": "Espresso" },
+        { "name": "Americano" },
+        { "name": "Latte" },
+        { "name": "Cappuccino" },
+        { "name": "Macchiato" },
+        { "name": "Mocha" },
+        { "name": "Cake" },
+        { "name": "Bread" },
+        { "name": "Cortado" },
+        { "name": "Doppio" },
+        { "name": "Breakfast" },
+        { "name": "Red Eye" },
+        { "name": "Galão" },
+        { "name": "Lungo" },
+        { "name": "Irish Coffee" },
+        { "name": "Lunch" },
+        { "name": "Turkish Coffee" },
+        { "name": "Viennese Coffee" },
+        { "name": "Cafe au Lait" },
+        { "name": "Cafe Crema" },
+        { "name": "Nitro Coffee" },
+        { "name": "Cold Brew" },
+        { "name": "Iced Coffee" },
+        { "name": "Bulletproof Coffee" },
+        { "name": "Cafe Cubano" },
+        { "name": "Piccolo Latte" },
+        { "name": "Bicerin" },
+        { "name": "Cafe Zorro" },
+        { "name": "Mazagran" },
+        { "name": "Eggnog Latte" },
+        { "name": "Pumpkin Spice Latte" }
+    ]
+}

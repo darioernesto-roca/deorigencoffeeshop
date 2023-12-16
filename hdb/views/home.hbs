@@ -1,0 +1,46 @@
+<main class="main">
+
+    <div class='hero'>
+        <video autoplay muted loop id="heroBackgroundVideo">
+            <source src="./vids/hero-vid-1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+        <div class='hero-text'>
+            <h1>{{ pageHeader }}</h1>
+            <a class='btn anchor' href='#products'>Explore More</a>
+        </div>
+    </div>
+
+    <section id="products" class="section-cards">
+        <header class="section-cards__header">
+            <h1 class="section-cards__main-heading">{{ pageHeader }}</h1>
+            <h2 class="section-cards__sub-heading">Discover the Latest in Specialty Coffee</h2>
+        </header>
+        <div class="cards-container">
+            {{#each products}}
+            <div class="card">
+                <article class="card__article">
+                    <div class="card__image-container">
+                        <img class="card__image" src="{{this.image_path}}" alt="image-{{this.id}}">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="card__heading">{{this.name}}</h2>
+                        <p class="card__description">
+                        <ul class="card__list">
+                            <li class="card__list__item">Category: {{this.category}}</li>
+                            <li class="card__list__item">Price: ${{this.price}}</li>
+                            <li class="card__list__item {{isUnavailable this.stock_status}}">
+                                Stock: {{this.stock_status}}
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </article>
+            </div>
+            {{/each}}
+        </div>
+
+    </section>
+
+</main>

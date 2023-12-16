@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Kytes Swimsuits</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__logo-container">
+            <a href="/"><img class="main-header__logo-container__logo-image" src="./img/logo/kytes-logo.png"
+                    alt="Logo Kytes"></a>
+        </div>
+        <div class="main-header__search-form-container">
+            <img src="./img/icons/search-icon.png" alt="Search Icon" class="main-header__search-icon">
+            <input type="text" name="search" placeholder="Search..." class="main-header__search-form-input">
+        </div>
+
+
+        <div class="main-header__hamburger-button-container">
+            <label class="hamburger-button" for="main-nav-toggle">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="./" class="main-nav__link">Home</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="./categories.html" class="main-nav__link">Categories</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="./contact.html" class="main-nav__link">Contact</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="./about-us.html" class="main-nav__link">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+
+        <div class='cover-contact'>
+            <div class='hero-text'>
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+          
+          
+          <section class="page__container">          
+                <div class="form-container">
+                  <h2 class="form-title">Contact Us</h2>
+                  <p class="header-paragraph">Our dedicated team is available to address any inquiries you may have. For immediate assistance, please give us a call: <a
+                      href="https://api.whatsapp.com/send?phone=+573004277281&amp;text=Hey there."
+                      target="_blank"><strong>Phone number: </strong>+57 3004277281</a></p>
+                  <form class="contact-form" action="/contact" method="POST">
+                    <div class="form-group">
+                      <label class="form-label" for="name">Full Name</label>
+                      <input class="form-input" id="name" name="name" type="text" placeholder="Your full name"
+                        required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="phone">Phone</label>
+                      <input class="form-input" id="phone" type="phone" name="phone" placeholder="Your phone">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="email">Email</label>
+                      <input class="form-input" id="email" name="email" type="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="help">Please select a topic.</div>
+                      <label for="service">Services</label>
+                      <select id="service" name="service" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option value="Request a quote or purchase an item">Request a quote or purchase an item</option>
+                        <option value="Schedule an appointment">Schedule an appointment</option>
+                        <option value="Learn more about our products">Learn more about our products</option>
+                        <option value="News and Promotions">News and Promotions</option>
+                        <option value="Custom-made">Custom-made</option>
+                        <option value="Style consultations">Style consultations</option>
+                    </select>
+                    
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-textarea" name="message" id="message" cols="40" rows="10"
+                        placeholder="Your message here..."></textarea>
+                      <div class="help">The message cannot have more than 500 words.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="terms">
+                        <input id="terms" type="checkbox" name="terms" required>
+                        <span>Accept <a class="link-pages" href="#">Terms & Conditions</a></span>
+                      </label>
+                    </div>
+                    <br />
+                    <div class="button-container">
+                      <input type="submit" value="Sent" class="normal">
+                    </div>
+                  </form>
+          
+          </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="main-footer__box-container main-footer__phone-number">
+            <a href="./index.html"><img class="main-header__logo-container__logo-image" src="./img/logo/kytes-logo.png"
+                    alt="Logo Kytes"></a>
+            <ul class="main-footer__list">
+                <li class="main-footer__item"><a
+                        href="https://wa.me/?text=Hola,%20Universo.%20Este%20es%20un%20vínculo%20a%20WhatsApp%20del%20proyecto%20integrador%20Juguetería%20Cósmica"
+                        class="main-footer__link" target="_blank"><img src="./img/icons/phone-solid.png" alt="Phone"
+                            class="main-footer__list__image"> +57 300 4277281</a></li>
+            </ul>
+        </div>
+        <div class="main-footer__box-container">
+            <div class="main-footer__title">Explore</div>
+            <ul class="main-footer__list">
+                <li class="main-footer__item"><a href="./" class="main-footer__link">Home</a>
+                </li>
+                <li class="main-footer__item"><a href="./categories.html" class="main-footer__link">Categories</a></li>
+                <li class="main-footer__item"><a href="./contact.html" class="main-footer__link">Contact</a></li>
+                <li class="main-footer__item"><a href="./about-us.html" class="main-footer__link">About Us</a></li>
+            </ul>
+        </div>
+        <div class="main-footer__box-container">
+            <div class="main-footer__title">Follow Us</div>
+            <ul class="main-footer__list">
+                <li class="main-footer__item"><a target="_blank" rel="noopener" href="https://www.instagram.com/"
+                        title="Juguetería Cósmica en Instagram" class="main-footer__link"><img
+                            src="img/icons/instagram-icon.png" alt="Icono Instagram"
+                            class="main-footer__list__image"><span
+                            class="main-footer__fallback-text">Instagram</span></a></li>
+                <li class="main-footer__item"><a target="_blank" rel="noopener" href="https://www.facebook.com/"
+                        title="Juguetería Cósmica en Facebook" class="main-footer__link"><img
+                            src="img/icons/facebook-icon.png" alt="Icono Facebook"
+                            class="main-footer__list__image"><span
+                            class="main-footer__fallback-text">Facebook</span></a></li>
+                <li class="main-footer__item"><a target="_blank" rel="noopener" href="https://www.youtube.com/"
+                        title="Juguetería Cósmica en YouTube" class="main-footer__link"><img
+                            src="img/icons/youtube-icon.png" alt="Icono YouTube" class="main-footer__list__image"><span
+                            class="main-footer__fallback-text">YouTube</span></a></li>
+            </ul>
+        </div>
+        <div class="main-footer__box-container">
+            <div class="main-footer__title">Legal</div>
+            <ul class="main-footer__list">
+                <li class="main-footer__item"><a href="#" class="main-footer__link">Privacy Policy</a></li>
+                <li class="main-footer__item"><a href="#" class="main-footer__link">Terms & Conditions</a></li>
+                <li class="main-footer__item"><a href="#" class="main-footer__link">Cookies Policy</a></li>
+            </ul>
+        </div>
+        <p class="main-footer__base-content">Kytes Swimsuits © 2023. All Rights Reserved | Developed By <a
+                class="main-footer__link" href="https://www.linkedin.com/in/dario-ernesto-roca/" target="_blank">Dario
+                Ernesto Roca</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<main class="main">
+
+
+    <div class='cover-contact'>
+        <div class='hero-text'>
+            <h1><%- pageHeader %></h1>
+        </div>
+    </div>
+      
+      
+      <section class="page__container">          
+            <div class="form-container">
+              <h2 class="form-title"><%- pageHeader %></h2>
+              <p class="header-paragraph">Our dedicated team is available to address any inquiries you may have. For immediate assistance, please give us a call: <a
+                  href="https://api.whatsapp.com/send?phone=+573004277281&amp;text=Hey there."
+                  target="_blank"><strong>Phone number: </strong>+57 3004277281</a></p>
+              <form class="contact-form" action="/contact" method="POST">
+                <div class="form-group">
+                  <label class="form-label" for="name">Full Name</label>
+                  <input class="form-input" id="name" name="name" type="text" placeholder="Your full name"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone</label>
+                  <input class="form-input" id="phone" type="phone" name="phone" placeholder="Your phone">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-input" id="email" name="email" type="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                  <div class="help">Please select a topic.</div>
+                  <label for="service">Services</label>
+                  <select id="service" name="service" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Request a quote or purchase an item">Request a quote or purchase an item</option>
+                    <option value="Schedule an appointment">Schedule an appointment</option>
+                    <option value="Learn more about our products">Learn more about our products</option>
+                    <option value="News and Promotions">News and Promotions</option>
+                    <option value="Custom-made">Custom-made</option>
+                    <option value="Style consultations">Style consultations</option>
+                </select>
+                
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-textarea" name="message" id="message" cols="40" rows="10"
+                    placeholder="Your message here..."></textarea>
+                  <div class="help">The message cannot have more than 500 words.</div>
+                </div>
+                <div class="form-group">
+                  <label for="terms">
+                    <input id="terms" type="checkbox" name="terms" required>
+                    <span>Accept <a class="link-pages" href="#">Terms & Conditions</a></span>
+                  </label>
+                </div>
+                <br />
+                <div class="button-container">
+                  <input type="submit" value="Sent" class="normal">
+                </div>
+              </form>
+      
+      </section>
+
+</main>

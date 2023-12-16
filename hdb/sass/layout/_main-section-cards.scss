@@ -1,0 +1,17 @@
+.section-cards {
+    
+    padding: 1em;
+
+    &__main-heading {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    &__paragraph,
+    &__sub-heading {
+        text-align: center;
+        color: #fff;
+
+    }
+}

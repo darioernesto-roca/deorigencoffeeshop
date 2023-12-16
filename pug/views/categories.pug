@@ -1,0 +1,65 @@
+extends layout.pug
+
+block appContent
+    main.main
+        .hero
+            video(autoplay muted loop id="heroBackgroundVideo")
+                source(src="./vids/hero-vid-2.mp4" type="video/mp4")
+                | Your browser does not support HTML5 video.
+            .hero__overlay
+            .hero-text
+                h1 Categories
+                a.btn.anchor(href='#categories') Explore More
+
+        section#categories.section-cards
+            header.section-cards__header
+            h1.section-cards__main-heading Categories
+            .categories-container
+                ul.categories-container__group
+                    li.categories-container__item White Summer
+                    li.categories-container__item Animal Print Summer
+                    li.categories-container__item Blue Summer
+                    li.categories-container__item Red Summer
+                    li.categories-container__item Orange Summer
+                ul.categories-container__group
+                    li.categories-container__item Beige Summer
+                    li.categories-container__item Bisque Summer
+                    li.categories-container__item Black Summer
+                    li.categories-container__item BlanchedAlmond Summer
+                    li.categories-container__item Blue Summer
+                ul.categories-container__group
+                    li.categories-container__item BlueViolet Summer
+                    li.categories-container__item Brown Summer
+                    li.categories-container__item BurlyWood Summer
+                    li.categories-container__item CadetBlue Summer
+                    li.categories-container__item Chartreuse Summer
+                ul.categories-container__group
+                    li.categories-container__item Chocolate Summer
+                    li.categories-container__item Coral Summer
+                    li.categories-container__item CornflowerBlue Summer
+                    li.categories-container__item Cornsilk Summer
+                    li.categories-container__item Crimson Summer
+                ul.categories-container__group
+                    li.categories-container__item Cyan Summer
+                    li.categories-container__item DarkBlue Summer
+                    li.categories-container__item DarkCyan Summer
+                    li.categories-container__item DarkGoldenRod Summer
+                    li.categories-container__item DarkGray Summer
+                ul.categories-container__group
+                    li.categories-container__item DarkGrey Summer
+                    li.categories-container__item DarkGreen Summer
+                    li.categories-container__item DarkKhaki Summer
+                    li.categories-container__item DarkMagenta Summer
+                    li.categories-container__item DarkOliveGreen Summer
+                ul.categories-container__group
+                    li.categories-container__item Darkorange Summer
+                    li.categories-container__item DarkOrchid Summer
+                    li.categories-container__item DarkRed Summer
+                    li.categories-container__item DarkSalmon Summer
+                    li.categories-container__item DarkSeaGreen Summer
+                ul.categories-container__group
+                    li.categories-container__item DarkSlateBlue Summer
+                    li.categories-container__item DarkSlateGray Summer
+                    li.categories-container__item DarkSlateGrey Summer
+                    li.categories-container__item DarkTurquoise Summer
+                    li.categories-container__item DarkViolet Summer
