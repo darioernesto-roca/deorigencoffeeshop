@@ -8,6 +8,7 @@ This repository includes the same website implemented in several variants:
 - **`hdb/`**: Express + Handlebars version
 - **`ejs/`**: Express + EJS version (includes MongoDB-backed data endpoints)
 - **`react/`**: standalone React + Vite single-page implementation
+- **`angular/`**: standalone Angular single-page implementation
 - **`next/`**: Next.js application foundation
 
 ## Features
@@ -30,6 +31,7 @@ This repository includes the same website implemented in several variants:
 ├── hdb/    # Express app using Handlebars templates
 ├── ejs/    # Express app using EJS templates + MongoDB models/routes
 ├── react/  # React + Vite client-rendered implementation
+├── angular/ # Angular client-rendered implementation
 └── next/   # Next.js application foundation
 ```
 
@@ -108,6 +110,7 @@ Expected body keys for write operations:
 - Static files are served from each variant's `public/` folder (or `html/` for static files).
 - The styles are already compiled to CSS (`main.css`) in each variant.
 - The React implementation is documented in [`react/README.md`](react/README.md), including its architecture, commands, deployment requirements, and current limitations.
+- The Angular implementation is documented in [`angular/README.md`](angular/README.md), including its strict standalone architecture, commands, deployment requirements, and limitations.
 
 ## License
 
